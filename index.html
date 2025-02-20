@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShopFusion - E-Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="stylees.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ShopFusion <i class="fa-solid fa-store"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Women's Fashion</a></li>
+                <li><a class="dropdown-item" href="#">Kids Clothes</a></li>
+                <li><a class="dropdown-item" href="#">Groceries</a></li>
+                <li><a class="dropdown-item" href="#">Home Decoration</a></li>
+                <li><a class="dropdown-item" href="#">Furniture</a></li>
+                <li><a class="dropdown-item" href="#">Electronics</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+          <!-- Right-side Icons (Cart and Profile) -->
+          <div class="d-flex ms-3">
+            <button class="icon-button"><i class="fa-solid fa-cart-shopping"></i></button>
+            <button class="icon-button ms-3"><i class="fa-solid fa-user"></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- slideer -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="1st banner.jpg" class="d-block w-100" alt="Offer 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="display-4">Limited Time Offer!</h5>
+            <p class="lead">Get up to <strong>50% Off</strong> on all products. Shop now and save big!</p>
+            <a href="#" class="btn btn-lg btn-primary">Shop Now</a>
+          </div>
+        </div>
+        
+        <!-- Second Slide -->
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="2nd banner.jpg" class="d-block w-100" alt="Offer 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="display-4 ">Free Shipping</h5>
+            <p class="lead ">Enjoy <strong>Free Shipping</strong> on all orders over $20. Don’t miss out!</p>
+            <a href="#" class="btn btn-lg btn-secondary">Shop Now</a>
+          </div>
+        </div>
+
+        <!-- Third Slide -->
+        <div class="carousel-item">
+          <img src="banner3.webp" class="d-block w-100" alt="Offer 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="display-4">Buy 1 Get 1 Free!</h5>
+            <p class="lead">Exclusive offer: <strong>Buy 1 Get 1 Free</strong> on selected items. Hurry up!</p>
+            <a href="#" class="btn btn-lg btn-warning">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        
+        <!-- Product Cards -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="MAKUP.webp" class="card-img-top img-fluid" alt="Women's Makeup">
+            <div class="card-body">
+              <h5 class="card-title">Women's Makeup</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h4>RS : 1000</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100">
+            <img src="Tshirt.avif" class="card-img-top img-fluid" alt="Men's T-Shirt">
+            <div class="card-body">
+              <h5 class="card-title">Men's T-Shirt</h5>
+              <p class="card-text">Comfortable cotton t-shirt for men. Available in different colors and sizes.</p>
+              <h4>RS : 600</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100">
+            <img src="shoes.webp" class="card-img-top img-fluid" alt="Sports Shoes">
+            <div class="card-body">
+              <h5 class="card-title">Sports Shoes</h5>
+              <p class="card-text">High-quality sports shoes with excellent grip and comfort for all activities.</p>
+              <h4>RS : 1500</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100">
+            <img src="laptop.avif" class="card-img-top img-fluid" alt="Laptop">
+            <div class="card-body">
+              <h5 class="card-title">Laptop</h5>
+              <p class="card-text">Powerful laptop with the latest technology and fast processing speeds.</p>
+              <h4>RS : 90,000</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100">
+            <img src="phone.jpg" class="card-img-top img-fluid" alt="Smartphone">
+            <div class="card-body">
+              <h5 class="card-title">Smartphone</h5>
+              <p class="card-text">Latest smartphone with powerful camera and high-definition display.</p>
+              <h4>RS : 70,000</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100">
+            <img src="sun glases.jpg" class="card-img-top img-fluid" alt="Sunglasses">
+            <div class="card-body">
+              <h5 class="card-title">Sunglasses</h5>
+              <p class="card-text">Stylish sunglasses to protect your eyes and enhance your look.</p>
+              <h4>RS : 500</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100">
+            <img src="handbag.webp" class="card-img-top img-fluid" alt="Handbag">
+            <div class="card-body">
+              <h5 class="card-title">Handbag</h5>
+              <p class="card-text">Fashionable handbags made with premium materials, perfect for any occasion.</p>
+              <h4>RS : 2000</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100">
+            <img src="watch.avif" class="card-img-top img-fluid" alt="Watches">
+            <div class="card-body">
+              <h5 class="card-title">Watches</h5>
+              <p class="card-text">Elegant watches with classic designs that complement any style.</p>
+              <h4>RS : 900</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100">
+            <img src="bag.jpg" class="card-img-top img-fluid" alt="Backpack">
+            <div class="card-body">
+              <h5 class="card-title">Backpack</h5>
+              <p class="card-text">Durable and stylish backpacks for everyday use or travel.</p>
+              <h4>RS : 3000</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="headphones.jpg" class="card-img-top img-fluid" alt="Headphones">
+            <div class="card-body">
+              <h5 class="card-title">Headphones</h5>
+              <p class="card-text">High-quality wireless headphones with noise cancellation for immersive sound.</p>
+              <h4>RS : 1500</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100">
+            <img src="gaming.gif" class="card-img-top img-fluid" alt="Gaming Console">
+            <div class="card-body">
+              <h5 class="card-title">Gaming Console</h5>
+              <p class="card-text">Next-gen gaming console with ultra-fast processing and realistic graphics.</p>
+              <h4>RS : 10,000</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100">
+            <img src="fitness band.jpg" class="card-img-top img-fluid" alt="Fitness Band">
+            <div class="card-body">
+              <h5 class="card-title">Fitness Band</h5>
+              <p class="card-text">Smart fitness band with heart rate monitoring and activity tracking features.</p>
+              <h4>RS : 1000</h4>
+              <a href="#" class="btn btn-primary w-100">Add to cart <i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+    <div class="container-cards my-5">
+      <h2 class="text-center mb-4 text-black">What Our Customers Say</h2>
+      
+      <div class="row">
+        
+        <!-- Review 1 -->
+        <div class="col-md-4">
+          <div class="review-card">
+            <img src="review1.jpg" alt="Customer 1">
+            <h5>Ayesha Khan</h5>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p>"Amazing shopping experience! The quality is top-notch, and delivery was super fast!"</p>
+          </div>
+        </div>
+    
+        <!-- Review 2 -->
+        <div class="col-md-4">
+          <div class="review-card">
+            <img src="review2.jpg" alt="Customer 2">
+            <h5>Ali Raza</h5>
+            <p class="rating">⭐⭐⭐⭐</p>
+            <p>"Great customer service. The product was exactly as described. Highly recommended!"</p>
+          </div>
+        </div>
+    
+        <!-- Review 3 -->
+        <div class="col-md-4">
+          <div class="review-card">
+            <img src="review3.avif" alt="Customer 3">
+            <h5>Fatima Ahmed</h5>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p>"Very happy with my purchase. I will definitely shop again!"</p>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    
+    <!-- footer -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <!-- Company Info -->
+          <div class="col-md-3">
+            <h5 class="fw-bold">About Us</h5>
+            <p>We provide the best quality products at affordable prices. Shop with confidence and enjoy a seamless experience.</p>
+          </div>
+    
+          <!-- Quick Links -->
+          <div class="col-md-3">
+            <h5 class="fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Shop</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Deals</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+            </ul>
+          </div>
+    
+          <!-- Customer Support -->
+          <div class="col-md-3">
+            <h5 class="fw-bold">Customer Support</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Returns & Refunds</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Shipping Policy</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+            </ul>
+          </div>
+    
+          <!-- Newsletter & Social Media -->
+          <div class="col-md-3">
+            <h5 class="fw-bold">Stay Connected</h5>
+            <form>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Enter your email" />
+              </div>
+              <button class="btn btn-primary w-100">Subscribe</button>
+            </form>
+            <div class="mt-3">
+              <a href="#" class="text-light me-3 fs-5"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-light me-3 fs-5"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-light fs-5"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="border-light">
+        <div class="text-center">
+          <p class="mb-0">© 2025 YourShop. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
